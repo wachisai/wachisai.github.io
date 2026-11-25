@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wachira Ngatia</title>
+<meta name="description" content="AI for global health. Physician and epidemiologist building AI and data systems that health programmes actually use. Director, Statsspeak Group. Nairobi.">
+<meta property="og:title" content="Wachira Ngatia">
+<meta property="og:description" content="AI for global health. Physician and epidemiologist building AI and data systems that health programmes actually use. Nairobi.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2314171A'/><text y='72' x='50' text-anchor='middle' font-size='62' font-family='Georgia,serif' fill='%23FBFAF7'>W</text></svg>">
+<style>
+  :root {
+    --bg: #FBFAF7; --surface: #F4F1EA; --ink: #14171A; --muted: #5B6169;
+    --faint: #8A9099; --rule: #E3DFD6; --accent: #8C3A24;
+    --serif: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131519; --surface: #1B1E23; --ink: #ECE8E1; --muted: #A0A6AE;
+      --faint: #757C85; --rule: #2A2E35; --accent: #E0906E;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans);
+         font-size: 17px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
+
+  a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); transition: border-color .15s, color .15s; }
+  a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: -0.01em; }
+
+  header { padding: 68px 0 0; }
+  .eyebrow { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--faint); font-weight: 600; }
+  h1 { font-size: 46px; line-height: 1.08; margin: 20px 0 0; }
+  .lede { font-size: 21px; line-height: 1.55; color: var(--ink); margin: 26px 0 0; max-width: 640px; }
+  .sub { font-size: 16px; color: var(--muted); margin: 18px 0 0; max-width: 640px; }
+
+  .routes { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 44px 0 0; max-width: 720px; }
+  .route { display: block; border: 1px solid var(--rule); border-radius: 3px; padding: 18px 20px; background: var(--surface); }
+  .route:hover { border-color: var(--accent); }
+  .route strong { display: block; font-size: 15px; font-weight: 600; margin-bottom: 3px; }
+  .route span { font-size: 14px; color: var(--muted); line-height: 1.5; display: block; }
+
+  .proof { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px 28px;
+           margin: 56px 0 0; padding: 26px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .stat .n { font-family: var(--serif); font-size: 30px; line-height: 1.1; display: block; }
+  .stat .l { font-size: 13px; color: var(--muted); line-height: 1.4; display: block; margin-top: 5px; }
+
+  section { padding: 74px 0 0; }
+  h2 { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--faint);
+       font-family: var(--sans); font-weight: 600; margin: 0 0 6px; }
+  .sec-lede { font-family: var(--serif); font-size: 27px; line-height: 1.3; margin: 0 0 10px; max-width: 660px; }
+  .sec-note { color: var(--muted); font-size: 16px; margin: 0 0 34px; max-width: 640px; }
+
+  .entry { padding: 26px 0; border-top: 1px solid var(--rule); display: grid; grid-template-columns: 200px 1fr; gap: 32px; }
+  .entry:last-child { border-bottom: 1px solid var(--rule); }
+  .entry-meta { font-size: 13px; color: var(--faint); line-height: 1.5; padding-top: 4px; }
+  .entry-meta .who { color: var(--muted); display: block; font-weight: 600; }
+  .entry h3 { font-size: 20px; margin: 0 0 8px; line-height: 1.3; }
+  .entry p { margin: 0 0 10px; color: var(--muted); font-size: 16px; }
+  .entry p:last-child { margin-bottom: 0; }
+  .entry .figure { color: var(--ink); font-weight: 600; }
+  .stack { font-family: var(--mono); font-size: 12.5px; color: var(--faint); letter-spacing: .01em; line-height: 1.6; }
+  .repo-link { font-size: 14px; font-family: var(--mono); }
+
+  .creds { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; border-top: 1px solid var(--rule); }
+  .cred { padding: 20px 0; border-bottom: 1px solid var(--rule); }
+  .cred strong { display: block; font-size: 16px; font-weight: 600; }
+  .cred span { display: block; font-size: 14px; color: var(--muted); margin-top: 2px; }
+
+  .pubs { border-top: 1px solid var(--rule); }
+  .pub { padding: 16px 0; border-bottom: 1px solid var(--rule); font-size: 16px; }
+  .pub span { display: block; font-size: 13px; color: var(--faint); margin-top: 2px; }
+
+  footer { margin-top: 76px; padding: 40px 0 72px; border-top: 1px solid var(--rule); }
+  .contact { display: flex; flex-wrap: wrap; gap: 10px 22px; font-size: 16px; margin-bottom: 16px; }
+  .avail { font-size: 14px; color: var(--muted); max-width: 620px; }
+  .colophon { font-size: 13px; color: var(--faint); margin-top: 22px; }
+
+  @media (max-width: 760px) {
+    body { font-size: 16px; }
+    h1 { font-size: 34px; }
+    .lede { font-size: 19px; }
+    .sec-lede { font-size: 23px; }
+    .routes { grid-template-columns: 1fr; }
+    .proof { grid-template-columns: 1fr 1fr; gap: 22px; }
+    .entry { grid-template-columns: 1fr; gap: 10px; }
+    .entry-meta { padding-top: 0; }
+    .creds { grid-template-columns: 1fr; }
+    header { padding-top: 46px; }
+    section { padding-top: 56px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Nairobi, Kenya</div>
+    <h1>Wachira Ngatia</h1>
+    <p class="lede">I help health programmes and organisations in Africa move AI from pilot to everyday use, safely and with evidence that it works.</p>
+    <p class="sub">Physician and epidemiologist. MBChB Nairobi, MSc Global Health Sciences Oxford. Director at Statsspeak Group and founder of Macho AI. Thirteen years at the Clinton Health Access Initiative, latterly as Senior Program Director for Vaccines and Digital Health.</p>
+
+    <div class="routes">
+      <a class="route" href="#build">
+        <strong>Reviewing me for a role or roster</strong>
+        <span>What I have built myself, with the code public and the running costs stated.</span>
+      </a>
+      <a class="route" href="#work">
+        <strong>Looking for an advisor or delivery partner</strong>
+        <span>AI audits, workflow automation, health data systems, team training.</span>
+      </a>
+    </div>
+
+    <div class="proof">
+      <div class="stat"><span class="n">13</span><span class="l">years at the Clinton Health Access Initiative</span></div>
+      <div class="stat"><span class="n">60%</span><span class="l">increase in contraceptive implant consumption in Kenya, in one year</span></div>
+      <div class="stat"><span class="n">86%</span><span class="l">cut in cost per trainee from on-the-job training design</span></div>
+      <div class="stat"><span class="n">&lt;1</span><span class="l">Kenyan shilling per AI-processed field referral</span></div>
+    </div>
+  </header>
+
+  <section id="build">
+    <h2>What I build</h2>
+    <p class="sec-lede">Most people who advise on AI in global health have never shipped any. Here is mine, running on synthetic data, with the code open.</p>
+    <p class="sec-note">Both repositories are personal work, built outside client engagements. They carry no client data and no protected health information.</p>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <span class="who">Personal build</span>
+        Python, Telegram Bot API, speech-to-text, LLM structured extraction, Google Apps Script
+      </div>
+      <div>
+        <h3>CHW voice pipeline</h3>
+        <p>Community health workers in Kenya record referrals on the MOH-100 form. In practice the form is paper, the data arrives late, and the smartphone app that was supposed to fix it assumes literacy, battery and bundles that the last mile does not have.</p>
+        <p>This pipeline takes a voice note in the worker's own language, transcribes it, extracts the 22 MOH-100 fields, and writes a structured row a supervisor can act on the same day. <span class="figure">Cost per referral is under one Kenyan shilling</span>, computed from metered usage rather than asserted. Records the model was unsure about are routed to a human instead of guessed.</p>
+        <p class="repo-link"><a href="https://github.com/wachisai/chw-voice-pipeline">github.com/wachisai/chw-voice-pipeline</a></p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <span class="who">Personal build</span>
+        FastAPI, PostGIS, Streamlit, Cori-method Rt, reporting-delay nowcasting
+      </div>
+      <div>
+        <h3>Epidemic intelligence</h3>
+        <p>Outbreak analytics built around the four ways outbreak dashboards mislead people: the epidemic curve that always falls at the right-hand edge because recent cases have not been reported yet, the naive case fatality ratio briefed mid-response, the reproduction number quoted as a point estimate at low counts, and no way to reconstruct what was known on a past date.</p>
+        <p>Every estimator implements a published method and cites it. The repository includes the product requirements document, because the design decisions are as much the point as the implementation.</p>
+        <p class="repo-link"><a href="https://github.com/wachisai/epidemic-intel">github.com/wachisai/epidemic-intel</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>What I do now</h2>
+    <p class="sec-lede">Director at Statsspeak Group, a Kenyan health intelligence and technology firm delivering advisory, analytics, AI automation and custom software across Africa.</p>
+    <p class="sec-note">I lead the health and AI practice. Recent client work has involved Gavi, Kenya's Ministry of Health, Girl Effect, IVI and CEPI. Engagements delivered for other clients are described by type, and no client data appears on this site or in any public repository.</p>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <span class="who">Advisory</span>
+        Global health, reproductive health, vaccine manufacturing, development finance
+      </div>
+      <div>
+        <h3>AI audits that start from the real workflow</h3>
+        <p>Map where AI saves time without adding risk. Set data-handling rules across public, internal and restricted tiers, aligned with Kenya's Data Protection Act. Design pilots with success measures agreed before the pilot starts rather than after it.</p>
+        <p>Most AI assessments in this sector start from the technology and look for a use case. Starting from the workflow is slower to sell and the only way to find out whether the thing would actually be used.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <span class="who">Delivery</span>
+        Ministries, funders, manufacturers
+      </div>
+      <div>
+        <h3>Health data systems and decision tools</h3>
+        <p>Automation pipelines, analytics dashboards and decision tools that turn complex operational data into decision-ready outputs. Recent work includes a multi-county primary health care performance platform on a fully open source stack, with a WhatsApp layer added because dashboard use turned out to be constrained by workload and computer access rather than by the dashboards.</p>
+        <p>County ICT teams were trained to run the servers and the application themselves.</p>
+        <p class="stack">ONA and ODK capture · DHIS2 API · Mage AI pipelines · ClickHouse · Apache Superset</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <span class="who">Macho AI</span>
+        Founder, since 2025<br><a href="https://www.macho.ke">macho.ke</a>
+      </div>
+      <div>
+        <h3>On-premises computer vision for commercial infrastructure</h3>
+        <p>Analyses existing CCTV on site via edge computing, so no personal data leaves the premises. Modules cover fuel throughput optimisation, footfall conversion, staff utilisation, forecourt management, and safety and incident detection, for petrol stations, malls and retail in Kenya.</p>
+        <p>Insights are delivered through cloud metadata dashboards and a WhatsApp-native chatbot, built for owners who need decision intelligence rather than raw footage.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <span class="who">Training</span>
+        Hands-on, for staff who will use it
+      </div>
+      <div>
+        <h3>Applied AI capability building</h3>
+        <p>Hands-on AI training for organisations' staff, built on the same principle as the audits: start from the work people actually do. Designing on-the-job training is where the 86 percent reduction in cost per trainee came from, in a different domain, with 95 percent competency reached.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Background and appointments</h2>
+    <p class="sec-lede">Thirteen years at the Clinton Health Access Initiative, across vaccines, reproductive health and digital health.</p>
+    <p class="sec-note">Senior Program Director for Vaccines and Digital Health from 2020, leading CHAI Kenya's portfolio and the use of GIS, advanced analytics and data science for health management. Before that, Associate Director for Vaccines and Sexual Reproductive Health, and Programme Manager for vaccine and family planning programmes in East Africa. Earlier, medical research officer at the KEMRI-Wellcome Trust programme in Kilifi.</p>
+
+    <div class="creds">
+      <div class="cred"><strong>Gavi, the Vaccine Alliance</strong><span>Independent Review Board, since 2023. Reviewing country proposals for vaccine introduction and health systems strengthening funding</span></div>
+      <div class="cred"><strong>World Health Organization</strong><span>Technical Advisory Group on digital technologies for assistive technology, appointed 2025</span></div>
+      <div class="cred"><strong>Kenya Ministry of Health</strong><span>Immunization Technical Working Group</span></div>
+      <div class="cred"><strong>IDRC</strong><span>External Review Committee, ANSRHRA Initiative, 2024</span></div>
+      <div class="cred"><strong>MBChB</strong><span>University of Nairobi. Registered physician, non-practising</span></div>
+      <div class="cred"><strong>MSc Global Health Sciences</strong><span>University of Oxford, epidemiology and public health</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Selected publications</h2>
+    <p class="sec-lede">Costing, scale-up and campaign delivery, mostly where the question was whether something would work at national scale.</p>
+    <div class="pubs">
+      <div class="pub">Examining the unit costs of COVID-19 vaccine delivery in Kenya<span>BMC Health Services Research</span></div>
+      <div class="pub">Africa's digital health revolution: the digital fit-viability model to move from innovation to scaled implementation<span>Journal of Medical Internet Research</span></div>
+      <div class="pub">Micro-planning in a wide age range measles rubella campaign using a mobile phone app, a case of Kenya<span>Pan African Medical Journal</span></div>
+      <div class="pub">Succeeding in new vaccine introduction: lessons learned from the introduction in Cameroon, Kenya and Nigeria</div>
+      <div class="pub">Treatment failure among Kenyan children with severe pneumonia, a cohort study<span>Pediatric Infectious Disease Journal</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="contact">
+      <a href="mailto:wachirangatia@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/antony-ngatia-public-health/">LinkedIn</a>
+      <a href="https://github.com/wachisai">GitHub</a>
+      <a href="https://statsspeak.co.ke">Statsspeak</a>
+      <a href="https://www.macho.ke">Macho AI</a>
+    </div>
+    <p class="avail">Open to AI for health leadership, AI strategy and governance, and digital health product and advisory roles with global health organisations, foundations and health-tech companies. Also available for advisory assignments, AI and workflow audits, and team training, up to 15 working days a month.</p>
+    <p class="colophon">One hand-written HTML file, no framework, no tracking, no cookies.</p>
+  </footer>
+
+</div>
+</body>
+</html>
